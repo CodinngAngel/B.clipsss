@@ -5,7 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
-    <link rel="stylesheet" href="style.css">
+<style> /* ==========================
+   Reset some default styles
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==========================
+   Body and general layout
+========================== */
+body {
+    background-color: #444248;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* ==========================
+   Header styles
+========================== */
+header {
+    width: 100%;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgb(12, 12, 9);
+}
+
+.upper img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* ==========================
+   Navigation styles
+========================== */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fffb1d;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* ==========================
+   Main section styles
+========================== */
+.Mainpart {
+    padding: 40px 20px;
+}
+
+.videobox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mainboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mainboxes div {
+    background-color: #555559;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mainboxes video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#VidTitles {
+    font-size: 14px;
+    color: #fffb1d;
+}
+
+/* ==========================
+   Footer styles
+========================== */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #222225;
+    text-align: center;
+    color: #fff;
+}
+</style>
 </head>
 <body>
 <header>
@@ -49,4 +158,5 @@
 </body>
 
 </html>
+
 
